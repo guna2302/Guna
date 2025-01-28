@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+       //task-1 fizzBuzz
+        for(let i=1;i<100;++i){
+           if(i%3==0 && i%5==0){
+            console.log("fizzBuzz")
+           }
+           else if(i%3==0){
+            console.log("fizz")
+            
+           }
+           else if(i%5==0){
+            console.log("Buzz")
+            
+           }
+           else{
+            console.log(i);
+            
+           }
+        }
+
+        //task-2 remove dublicate arrey
+       function removeDuplicate(arr){
+        return new Set(arr);
+       }
+       const oldArray=[1,2,3,4,5,6,1,2,3];
+       const newArray=removeDuplicate(oldArray);
+       console.log(newArray);
+
+       //task-3 
+       function count(str){
+        const result={};
+        for(const num of str){
+            result[num]=(result[num]||0)+1;
+        }
+        return result;
+       }
+       const input=count("hello guna");
+       console.log(input);
+        //task-4
+        function secocondLarge(arrey){
+            second=arrey.sort((a,b)=>a-b);
+            return second[second.length-2]
+        }
+        const secondnumbers=secocondLarge([1,2,3,4,5,6])
+        console.log(secondnumbers);
+
+        //task-5
+
+        function nested(arr){
+            let number=[...arr];
+            let a=[];
+
+            while(number.length){
+                let b=num.pop();
+                
+                }
+                
+            }
+        
+        
+
+
+        
+        
+        
+    </script>
+</body>
+</html>
